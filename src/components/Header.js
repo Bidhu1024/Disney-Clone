@@ -104,7 +104,7 @@ const Header = (props) => {
       </SignOut>
       </>
     )}
-      <Login onClick={handleAuth}>Login</Login>
+      {/* <Login onClick={handleAuth}>Login</Login> */}
     </Nav>
   );
 };
