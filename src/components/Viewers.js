@@ -19,31 +19,37 @@ function Viewers() {
     <Container>
      <Wrap>
         <img src={v1} alt="1" />
-        <video  autoPlay={true} > 
+        <video  loop autoPlay muted> 
          <source src={vid1} type='video/mp4'/> 
         </video>
      </Wrap>
      <Wrap>
         <img src={v2} alt="2" />
-        <video autoPlay={true} >
+        <video loop autoPlay muted >
         <source  src={vid2} type='video/mp4' />
       </video>
 
      </Wrap>
      <Wrap>
         <img src={v3} alt="3" />
-        <video autoPlay={true} loop={true} playsInline={true} src={vid3} type='video/mp4'/>
+        <video loop autoPlay muted >
+        <source  src={vid3} type='video/mp4' />
+      </video>
 
      </Wrap>
      <Wrap>
         <img src={v4} alt="4" />
-        <video autoPlay={true} loop={true} playsInline={true} src={vid4} type='video/mp4'/>
+        <video loop autoPlay muted >
+        <source  src={vid4} type='video/mp4' />
+      </video>
 
      </Wrap>
     
      <Wrap>
         <img src={v5} alt="5" />
-        <video autoPlay={true} loop={true} playsInline={true} src={vid5} type='video/mp4'/>
+        <video loop autoPlay muted >
+        <source  src={vid5} type='video/mp4' />
+      </video>
 
      </Wrap>
     
