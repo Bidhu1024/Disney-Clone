@@ -1,13 +1,21 @@
 import styled from 'styled-components'
 import HomeLogo from '../Assets/home-background.png'
 import ImageSlider from './ImageSlider'
+import NewDisney from './NewDisney';
+import Recommends from './Recommends';
 import Viewers from './Viewers';
+import Originals from './Originals';
+import Trendings from './Trending';
 const Home =(props)=>{
 return (
     
     <Container>
       <ImageSlider/>
       <Viewers />
+      <Recommends/>
+      <NewDisney/>
+      <Originals/>
+      <Trendings/>
           </Container>
 )
 }

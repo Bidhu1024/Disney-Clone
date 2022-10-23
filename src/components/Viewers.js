@@ -98,6 +98,29 @@ box-shadow:rgb(0,0,0/ 69%) 0px 26px 30px -10px, rgb(0 0 0 /73%)
         z-index: 1;
         top: 0;
     }
+
+    video{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      opacity: 0;
+      z-index: 0;
+
+
+    }
+
+    &:hover{
+      box-shadow:rgb(0,0,0/ 80%) 0px 40px 58px -16px, rgb(0 0 0 /72%)
+    0px 30px 22px -10px; 
+      
+      transform: scale(1.05);
+      border-color: rgba(249,249,249,0.5);
+      video{
+         opacity: 1;
+      }
+
+    }
 `;
 
 
