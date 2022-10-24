@@ -23,21 +23,22 @@ const Home = (props) => {
   useEffect(() => {
     db.collection("movies").onSnapshot((snapshot) => {
       snapshot.docs.map((doc) => {
-        console.log(Recommends)
+        console.log(Recommends);
         switch (doc.data().type) {
           case "recommend":
-             Recommends = [...Recommends, { id: doc.id, ...doc.data() }]
+            Recommends = [...Recommends, { id: doc.id, ...doc.data() }];
             break;
           case "new":
-            NewDisney = [...NewDisney,{ id: doc.id, ...doc.data() }]
+            NewDisney = [...NewDisney, { id: doc.id, ...doc.data() }];
             break;
           case "original":
-            Originals = [...Originals, { id: doc.id, ...doc.data() }]
+            Originals = [...Originals, { id: doc.id, ...doc.data() }];
             break;
           case "trending":
-            Trendings = [...Trendings,{ id: doc.id, ...doc.data() }]
+            Trendings = [...Trendings, { id: doc.id, ...doc.data() }];
             break;
-        default: return []   
+          default:
+            return [];
         }
       });
     });
@@ -50,7 +51,7 @@ const Home = (props) => {
         trending: Trendings,
       })
     );
-  },[userName]);
+  }, [userName]);
   return (
     <Container>
       <ImageSlider />
